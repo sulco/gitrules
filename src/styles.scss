@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~primeng/resources/primeng.css";
+@import "~primeng/resources/themes/nova-light/theme.css";
+
+* {
+  font-family: Lato, Open Sans, Helvetica Neue, Helvetica, Arial;
+  line-height: 1.6;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  background: #e9eff2;
+  margin: 0;
+  display: flex;
+  padding: 0 1em;
+}
+
+main {
+  padding: 1em 2em;
+  max-width: 720px;
+  overflow-y: auto;
+  margin: 1em auto;
+  background: #fff;
+  flex-grow: 1;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border-top: solid 4px #ddd;
+  border-bottom: solid 4px #ddd;
+}
+
+section {
+  margin: 0 0.2em;
+}
+
+h1 {
+  margin: 0;
+}
+
+.info {
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+  color: #aaa;
+}
+
+.info small + small {
+  margin-left: 1em;
+}
+
+pre,
+code {
+  background: #f6f8fa;
+  border-radius: 0.2em;
+}
+
+pre {
+  padding: 1em;
+  margin: 1em 0;
+  display: block;
+}
+
+code {
+  font-family: Courier New, Courier, monospace;
+  padding: 0.2em 0.4em;
+  display: inline-block;
+}
+
+label {
+  line-height: 2;
+  font-size: 1.2em;
+  color: #999;
+}
+
+.ui-autocomplete,
+p-autocomplete,
+.ui-autocomplete input {
+  width: 100%;
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    padding: 0;
+  }
+  main {
+    padding: 1em;
+  }
+  pre {
+    padding: 1em 0.4em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  code {
+    white-space: normal;
+  }
+}
